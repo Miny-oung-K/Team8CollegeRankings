@@ -1,0 +1,20 @@
+1. What department are you in?
+a. Arts and Humanities
+b. Biological Sciences
+c. Data Science
+d. Engineering
+e. Health Sciences
+f. Physcial Sciences
+g. Scripps Institution of Oceanography
+h. Social Sciences
+
+2. Do you prefer living in Residential Halls or Apartment Style?
+a. Residential Halls
+b. Apartment Style
+
+3. Do you prefer having access to a kitchen?
+a. Yes
+b. No
+
+4. How far do you want to be from campus? 
+
