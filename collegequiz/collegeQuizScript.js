@@ -8,10 +8,20 @@ function calculateResult() {
     const q3 = document.querySelector('input[name="q3"]:checked');
     const q4 = document.querySelector('input[name="q4"]:checked');
     const q5 = document.querySelector('input[name="q5"]:checked');
+    const q6 = document.querySelector('input[name="q6"]:checked');
+    const q7 = document.querySelector('input[name="q7"]:checked');
+    const q8 = document.querySelector('input[name="q8"]:checked');
+    const q9 = document.querySelector('input[name="q9"]:checked');
 
     // Initialize variables to keep track of personality types
-    let introvertCount = 0;
-    let extrovertCount = 0;
+    let EighthCount = 0;
+    let SixthCount = 0;
+    let RevelleCount = 0;
+    let MuirCount = 0;
+    let ERCCount = 0;
+    let MarshallCount = 0;
+    let SeventhCount = 0;
+    let WarrenCount = 0;
 
     // Check the answers for each question
     if (q1 && q1.value === 'introvert') introvertCount++;
@@ -28,6 +38,18 @@ function calculateResult() {
 
     if (q5 && q5.value === 'introvert') introvertCount++;
     if (q5 && q5.value === 'extrovert') extrovertCount++;
+
+    if (q6 && q6.value === 'introvert') introvertCount++;
+    if (q6 && q6.value === 'extrovert') extrovertCount++;
+
+    if (q7 && q7.value === 'introvert') introvertCount++;
+    if (q7 && q7.value === 'extrovert') extrovertCount++;
+
+    if (q8 && q8.value === 'introvert') introvertCount++;
+    if (q8 && q8.value === 'extrovert') extrovertCount++;
+
+    if (q9 && q9.value === 'introvert') introvertCount++;
+    if (q9 && q.value === 'extrovert') extrovertCount++;
 
     // Determine the result based on the counts
     let resultText = '';
