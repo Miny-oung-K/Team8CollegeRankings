@@ -42,23 +42,40 @@ function calculateResult() {
     if (q6 && q6.value === 'introvert') introvertCount++;
     if (q6 && q6.value === 'extrovert') extrovertCount++;
 
-    if (q7 && q7.value === 'introvert') introvertCount++;
-    if (q7 && q7.value === 'extrovert') extrovertCount++;
+    if (q7 && q7.value === 'Yes') RevelleCount++;
+    if (q7 && q7.value === 'Yes') ERCCount++;
+    if (q7 && q7.value === 'Yes') MuirCount++;
+    if (q7 && q7.value === 'Yes') SixthCount++;
+    if (q7 && q7.value === 'Yes') MarshallCount++;
+    if (q7 && q7.value === 'Yes') WarrenCount++;
+    if (q7 && q7.value === 'Yes') EighthCount++;
+    if (q7 && q7.value === 'No') SeventhCount++;
 
-    if (q8 && q8.value === 'introvert') introvertCount++;
-    if (q8 && q8.value === 'extrovert') extrovertCount++;
+    if (q8 && q8.value === 'Less than 5 minutes') SixthCount++;
+    if (q8 && q8.value === '5-10 minutes') WarrenCount++;
+    if (q8 && q8.value === '5-10 minutes') MuirCount++;
+    if (q8 && q8.value === '10-15 minutes') MarshallCount++;
+    if (q8 && q8.value === '10-15 minutes') ERCCount++;
+    if (q8 && q8.value === '10-15 minutes') RevelleCount++;
+    if (q8 && q8.value === 'More than 15 minutes') SeventhCount++;
+    if (q8 && q8.value === 'More than 15 minutes') EighthCount++;
 
-    if (q9 && q9.value === 'introvert') introvertCount++;
-    if (q9 && q.value === 'extrovert') extrovertCount++;
+    if (q9 && q9.value === 'Yes') SeventhCount++;
+    if (q9 && q9.value === 'Yes') MarshallCount++;
+    if (q9 && q9.value === 'Yes') MuirCount++;
+    if (q9 && q9.value === 'Yes') SeventhCount++;
+    if (q9 && q9.value === 'Yes') SixthCount++;
+    if (q9 && q9.value === 'Yes') ERCCount++;
+    if (q9 && q9.value === 'No') WarrenCount++;
+    if (q9 && q9.value === 'No') EighthCount++;
+    if (q9 && q.value === 'No') RevelleCount++;
 
     // Determine the result based on the counts
     let resultText = '';
-    if (introvertCount > extrovertCount) {
-        resultText = 'You are more of an Introvert!';
-    } else if (extrovertCount > introvertCount) {
-        resultText = 'You are more of an Extrovert!';
-    } else {
-        resultText = 'You have a balanced personality!';
+    colleges = [SeventhCount, MarshallCount, MuirCount, SixthCount, WarrenCount, RevelleCount, EighthCount, ERCCount];
+    for (let i = 0; i < colleges.length; i++)
+    {
+        
     }
 
     // Display the result on the page
