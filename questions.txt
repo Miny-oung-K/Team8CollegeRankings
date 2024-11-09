@@ -18,3 +18,7 @@ b. No
 
 4. How far do you want to be from campus? 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 223f595bfa1c5107426f12c8b603df860b93d7a5

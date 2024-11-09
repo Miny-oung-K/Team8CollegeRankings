@@ -78,6 +78,34 @@ function calculateResult() {
     if (q1 && q1.value === 'Physical Sciences') MuirCount += 3;
     if (q1 && q1.value === 'Physical Sciences') MarshallCount += 2;
     if (q1 && q1.value === 'Physical Sciences') SixthCount += 1;
+    if (q4 && q4.value === 'Residential Halls') ERCCount+=2;
+    if (q4 && q4.value === 'Residential Halls') WarrenCount++;
+    if (q4 && q4.value === 'Residential Halls') MarshallCount++;
+    if (q4 && q4.value === 'Residential Halls') MuirCount++;
+    if (q4 && q4.value === 'Residential Halls') RevelleCount++;
+    if (q4 && q4.value === 'Residential Halls') SixthCount++;
+    if (q4 && q4.value === 'Residential Halls') EighthCount+=2;
+    if (q4 && q4.value === 'Apartment Style') SeventhCount++;
+    if (q4 && q4.value === 'Apartment Style') EighthCount+=2;
+    if (q4 && q4.value === 'Apartment Style') ERCCount+=2;
+
+    if (q5 && q5.value === 'Yes') SeventhCount++;
+    if (q5 && q5.value === 'Yes') EighthCount++;
+    if (q5 && q5.value === 'Yes') SixthCount++;
+    if (q5 && q5.value === 'Yes') RevelleCount++;
+    if (q5 && q5.value === 'Yes') ERCCount++;
+    if (q5 && q5.value === 'Yes') MuirCount++;
+    if (q5 && q5.value === 'No') MarshallCount++;
+    if (q5 && q5.value === 'No') WarrenCount++;
+
+    if (q6 && q6.value === 'Yes') MuirCount++;
+    if (q6 && q6.value === 'Yes') SixthCount++;
+    if (q6 && q6.value === 'Yes') ERCCount++;
+    if (q6 && q6.value === 'Yes') WarrenCount++;
+    if (q6 && q6.value === 'No') SeventhCount++;
+    if (q6 && q6.value === 'No') EighthCount++;
+    if (q6 && q6.value === 'No') RevelleCount++;
+    if (q6 && q6.value === 'No') MarshallCount++;
 
     if (q1 && q1.value === 'Scripps Institution of Oceanography') RevelleCount += 8;
     if (q1 && q1.value === 'Scripps Institution of Oceanography') WarrenCount += 7;
