@@ -24,32 +24,109 @@ function calculateResult() {
     let WarrenCount = 0;
 
     // Check the answers for each question
-    if (q1 && q1.value === 'introvert') introvertCount++;
-    if (q1 && q1.value === 'extrovert') extrovertCount++;
+    // Question 1: What department is your major in?
+    if (q1 && q1.value === 'Arts & Humanities') EighthCount += 8;
+    if (q1 && q1.value === 'Arts & Humanities') SixthCount += 7;
+    if (q1 && q1.value === 'Arts & Humanities') RevelleCount += 6;
+    if (q1 && q1.value === 'Arts & Humanities') MuirCount += 5;
+    if (q1 && q1.value === 'Arts & Humanities') ERCCount += 4;
+    if (q1 && q1.value === 'Arts & Humanities') MarshallCount += 3;
+    if (q1 && q1.value === 'Arts & Humanities') SeventhCount += 2;
+    if (q1 && q1.value === 'Arts & Humanities') WarrenCount += 1;
 
-    if (q2 && q2.value === 'introvert') introvertCount++;
-    if (q2 && q2.value === 'extrovert') extrovertCount++;
+    if (q1 && q1.value === 'Biological Sciences') RevelleCount += 8;
+    if (q1 && q1.value === 'Biological Sciences') MarshallCount += 7;
+    if (q1 && q1.value === 'Biological Sciences') WarrenCount += 6;
+    if (q1 && q1.value === 'Biological Sciences') EighthCount += 5;
+    if (q1 && q1.value === 'Biological Sciences') MuirCount += 4;
+    if (q1 && q1.value === 'Biological Sciences') ERCCount += 3;
+    if (q1 && q1.value === 'Biological Sciences') SeventhCount += 2;
+    if (q1 && q1.value === 'Biological Sciences') SixthCount += 1;
 
-    if (q3 && q3.value === 'introvert') introvertCount++;
-    if (q3 && q3.value === 'extrovert') extrovertCount++;
+    if (q1 && q1.value === 'Data Science') WarrenCount += 8;
+    if (q1 && q1.value === 'Data Science') SeventhCount += 7;
+    if (q1 && q1.value === 'Data Science') EighthCount += 6;
+    if (q1 && q1.value === 'Data Science') SixthCount += 5;
+    if (q1 && q1.value === 'Data Science') RevelleCount += 4;
+    if (q1 && q1.value === 'Data Science') MuirCount += 3;
+    if (q1 && q1.value === 'Data Science') MarshallCount += 2;
+    if (q1 && q1.value === 'Data Science') ERCCount += 1;
 
-    if (q4 && q4.value === 'introvert') introvertCount++;
-    if (q4 && q4.value === 'extrovert') extrovertCount++;
+    if (q1 && q1.value === 'Engineering') WarrenCount += 8;
+    if (q1 && q1.value === 'Engineering') SeventhCount += 7;
+    if (q1 && q1.value === 'Engineering') RevelleCount += 6;
+    if (q1 && q1.value === 'Engineering') SixthCount += 5;
+    if (q1 && q1.value === 'Engineering') EighthCount += 4;
+    if (q1 && q1.value === 'Engineering') MuirCount += 3;
+    if (q1 && q1.value === 'Engineering') MarshallCount += 2;
+    if (q1 && q1.value === 'Engineering') ERCCount += 1;
 
-    if (q5 && q5.value === 'introvert') introvertCount++;
-    if (q5 && q5.value === 'extrovert') extrovertCount++;
+    if (q1 && q1.value === 'Health Sciences') RevelleCount += 8;
+    if (q1 && q1.value === 'Health Sciences') MarshallCount += 7;
+    if (q1 && q1.value === 'Health Sciences') EighthCount += 6;
+    if (q1 && q1.value === 'Health Sciences') WarrenCount += 5;
+    if (q1 && q1.value === 'Health Sciences') ERCCount += 4;
+    if (q1 && q1.value === 'Health Sciences') MuirCount += 3;
+    if (q1 && q1.value === 'Health Sciences') SeventhCount += 2;
+    if (q1 && q1.value === 'Health Sciences') SixthCount += 1;
 
-    if (q6 && q6.value === 'introvert') introvertCount++;
-    if (q6 && q6.value === 'extrovert') extrovertCount++;
+    if (q1 && q1.value === 'Physical Sciences') RevelleCount += 8;
+    if (q1 && q1.value === 'Physical Sciences') WarrenCount += 7;
+    if (q1 && q1.value === 'Physical Sciences') SeventhCount += 6;
+    if (q1 && q1.value === 'Physical Sciences') EighthCount += 5;
+    if (q1 && q1.value === 'Physical Sciences') ERCCount += 4;
+    if (q1 && q1.value === 'Physical Sciences') MuirCount += 3;
+    if (q1 && q1.value === 'Physical Sciences') MarshallCount += 2;
+    if (q1 && q1.value === 'Physical Sciences') SixthCount += 1;
 
-    if (q7 && q7.value === 'introvert') introvertCount++;
-    if (q7 && q7.value === 'extrovert') extrovertCount++;
+    if (q1 && q1.value === 'Scripps Institution of Oceanography') RevelleCount += 8;
+    if (q1 && q1.value === 'Scripps Institution of Oceanography') WarrenCount += 7;
+    if (q1 && q1.value === 'Scripps Institution of Oceanography') SeventhCount += 6;
+    if (q1 && q1.value === 'Scripps Institution of Oceanography') EighthCount += 5;
+    if (q1 && q1.value === 'Scripps Institution of Oceanography') ERCCount += 4;
+    if (q1 && q1.value === 'Scripps Institution of Oceanography') MuirCount += 3;
+    if (q1 && q1.value === 'Scripps Institution of Oceanography') MarshallCount += 2;
+    if (q1 && q1.value === 'Scripps Institution of Oceanography') SixthCount += 1;
 
-    if (q8 && q8.value === 'introvert') introvertCount++;
-    if (q8 && q8.value === 'extrovert') extrovertCount++;
+    if (q1 && q1.value === 'Social Sciences') EighthCount += 8;
+    if (q1 && q1.value === 'Social Sciences') MarshallCount += 7;
+    if (q1 && q1.value === 'Social Sciences') ERCCount += 6;
+    if (q1 && q1.value === 'Social Sciences') MuirCount += 5;
+    if (q1 && q1.value === 'Social Sciences') SixthCount += 4;
+    if (q1 && q1.value === 'Social Sciences') SeventhCount += 3;
+    if (q1 && q1.value === 'Social Sciences') RevelleCount += 2;
+    if (q1 && q1.value === 'Social Sciences') WarrenCount += 1;
+    
+    // Question 2: Which of the following speaks to you the most?
+    if (q2 && q2.value === 'Tradition') RevelleCount += 2;
+    if (q2 && q2.value === 'Individuality') MuirCount += 2;
+    if (q2 && q2.value === 'Diversity') MarshallCount += 2;
+    if (q2 && q2.value === 'Sustainability') SeventhCount += 2;
+    if (q2 && q2.value === 'Innovative') SixthCount += 2;
+    if (q2 && q2.value === 'Global') ERCCount += 2;
+    if (q2 && q2.value === 'Community') EighthCount += 2;
+    if (q2 && q2.value === 'Ethics') WarrenCount += 2;
 
-    if (q9 && q9.value === 'introvert') introvertCount++;
-    if (q9 && q.value === 'extrovert') extrovertCount++;
+    //Question 3: Which dining options fo you prefer? (Select all that apply)
+    //Dining Halls
+    if (q3 && q3.value === 'Dining Halls') SeventhCount++;
+    if (q3 && q3.value === 'Dining Halls') SixthCount += 2;
+    if (q3 && q3.value === 'Dining Halls') MuirCount += 2;
+    if (q3 && q3.value === 'Dining Halls') RevelleCount += 2;
+    if (q3 && q3.value === 'Dining Halls') WarrenCount += 2;
+    if (q3 && q3.value === 'Dining Halls') MarshallCount += 2;
+    if (q3 && q3.value === 'Dining Halls') ERCCount += 2;
+    //Local restaurants
+    if (q3 && q3.value === 'Local restaurants') SixthCount += 2;
+    if (q3 && q3.value === 'Local restaurants') MuirCount += 2;
+    if (q3 && q3.value === 'Local restaurants') WarrenCount += 2;
+    //Markets nearby
+    if (q3 && q3.value === 'Markets nearby') SeventhCount += 2;
+    if (q3 && q3.value === 'Markets nearby') SixthCount += 2;
+    if (q3 && q3.value === 'Markets nearby') MuirCount += 2;
+    if (q3 && q3.value === 'Markets nearby') RevelleCount += 2;
+    if (q3 && q3.value === 'Markets nearby') WarrenCount += 2;
+
 
     // Determine the result based on the counts
     let resultText = '';
