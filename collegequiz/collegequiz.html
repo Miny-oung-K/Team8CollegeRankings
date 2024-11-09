@@ -4,218 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UC San Diego College Ranking Quiz</title>
-    <!-- Link to Google Fonts for the custom font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Honk&display=swap">
-    <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="./personality-quiz-styles.css">
 </head>
 <body>
     <a class="back-button" href="../index.html">Back</a>
-    <!-- Main container for the quiz -->
     <div class="quiz-container">
         <h1>What is YOUR best college ranking</h1>
 
-        <!-- Quiz questions -->
         <form id="quiz-form">
-            <!-- Section 1 Question 1 -->
+            <!-- Section 1 -->
+            <h2>Section 1</h2>
             <div class="question">
-                <p>1. What department is your major in?</p>
+                <p><strong>1. What department is your major in?</strong></p>
                 <label>
-<<<<<<< Updated upstream
-                    <input type="radio" name="q1" value="Arts and Humanities"> Arts and Humanities
-=======
-                    <input type="radio" name="q1" value="one"> Reading a book
->>>>>>> Stashed changes
+                    <input type="radio" name="major" value="Arts and Humanities"> Arts and Humanities
                 </label><br>
                 <label>
-                    <input type="radio" name="q1" value="Biological Sciences"> Biological Sciences
-                </label>
+                    <input type="radio" name="major" value="Biological Sciences"> Biological Sciences
+                </label><br>
                 <label>
-                    <input type="radio" name="q1" value="Data Science"> Data Science
-                </label>
+                    <input type="radio" name="major" value="Data Science"> Data Science
+                </label><br>
                 <label>
-                    <input type="radio" name="q1" value="Health Sciences"> Health Sciences
-                </label>
+                    <input type="radio" name="major" value="Health Sciences"> Health Sciences
+                </label><br>
                 <label>
-                    <input type="radio" name="q1" value="Physical Sciences"> Physical Sciences
-                </label>
+                    <input type="radio" name="major" value="Physical Sciences"> Physical Sciences
+                </label><br>
                 <label>
-                    <input type="radio" name="q1" value="Scripps Institution of Oceanography"> Scripps Institution of Oceanography
-                </label>
+                    <input type="radio" name="major" value="Scripps Institution of Oceanography"> Scripps Institution of Oceanography
+                </label><br>
                 <label>
-                    <input type="radio" name="q1" value="Social Sciences"> Social Sciences
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="extrovert"> Hanging out with friends
+                    <input type="radio" name="major" value="Social Sciences"> Social Sciences
                 </label>
             </div>
 
-            <!-- Section 1 Question 2 -->
             <div class="question">
-                <p>2. Which of the following speaks to you the most?</p>
+                <p><strong>2. Which of the following speaks to you the most?</strong></p>
                 <label>
-                    <input type="radio" name="q2" value="Tradition"> Tradition
+                    <input type="radio" name="values" value="Tradition"> Tradition
                 </label><br>
                 <label>
-                    <input type="radio" name="q2" value="Individuality"> Individuality
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="Diversity"> Diversity
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="Sustainability"> Sustainability
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="Innovative"> Innovative
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="Global"> Global
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="Community"> Community
-                </label>
-                <label>
-                    <input type="radio" name="q2" value="Ethics"> Ethics
-                </label>
-
-            </div>
-
-            <!-- Section 2 Question 1 -->
-            <div class="question">
-                <p>1. Which dining options do you prefer? (Select all that apply)</p>
-                <label>
-                    <input type="radio" name="q3" value="Dining Halls"> Dining Halls
+                    <input type="radio" name="values" value="Individuality"> Individuality
                 </label><br>
                 <label>
-                    <input type="radio" name="q3" value="Local restaurants"> Local restaurants
-                </label>
+                    <input type="radio" name="values" value="Diversity"> Diversity
+                </label><br>
                 <label>
-                    <input type="radio" name="q3" value="Markets nearby"> Markets nearby
+                    <input type="radio" name="values" value="Sustainability"> Sustainability
+                </label><br>
+                <label>
+                    <input type="radio" name="values" value="Innovative"> Innovative
+                </label><br>
+                <label>
+                    <input type="radio" name="values" value="Global"> Global
+                </label><br>
+                <label>
+                    <input type="radio" name="values" value="Community"> Community
+                </label><br>
+                <label>
+                    <input type="radio" name="values" value="Ethics"> Ethics
                 </label>
             </div>
 
-            <!-- Section 4 Question 1 -->
+            <!-- Section 2 -->
+            <h2>Section 2</h2>
             <div class="question">
-                <p>1. How far are you willing to walk to the campus center?</p>
+                <p><strong>1. Which dining options do you prefer?</strong></p>
                 <label>
-                    <input type="radio" name="q4" value="Less than 5 minutes"> Less than 5 minutes
+                    <input type="radio" name="dining" value="Dining Halls"> Dining Halls
                 </label><br>
                 <label>
-                    <input type="radio" name="q4" value="5-10 minutes"> 5-10 minutes
-                </label>
+                    <input type="radio" name="dining" value="Local restaurants"> Local restaurants
+                </label><br>
                 <label>
-                    <input type="radio" name="q4" value="10-15 minutes"> 10-15 minutes
-                </label>
-                <label>
-                    <input type="radio" name="q4" value="More than 15 minutes"> More than 15 minutes
+                    <input type="radio" name="dining" value="Markets nearby"> Markets nearby
                 </label>
             </div>
 
-            <!-- Section 4 Question 2 -->
-            <div class="question">
-                <p>2. Do you prefer having access to the RIMAC gym nearby?</p>
-                <label>
-                    <input type="radio" name="q5" value="Yes"> Yes
-                </label><br>
-                <label>
-                    <input type="radio" name="q5" value="No"> No
-                </label>
-            </div>
-
-            <!--section 3-->
-            <!--Question -->
-            <h2>Section 3:</h2>
+            <!-- Section 3 -->
+            <h2>Section 3</h2>
             <div class="question">
                 <p><strong>1. Do you prefer living in residential halls or apartment-style?</strong></p>
-                <div class="options">
-                    <div class="option">
-                        <input type="radio" id="residential" name="q1" value="Residential Halls">
-                        <label for="residential">Residential Halls</label>
-                    </div>
-                    <div class="option">
-                        <input type="radio" id="apartment" name="q2" value="Apartment Style">
-                        <label for="apartment">Apartment Style</label>
-                    </div>
-                </div>
+                <label>
+                    <input type="radio" name="housing" value="Residential Halls"> Residential Halls
+                </label><br>
+                <label>
+                    <input type="radio" name="housing" value="Apartment Style"> Apartment Style
+                </label>
             </div>
 
             <div class="question">
                 <p><strong>2. Do you prefer having access to a kitchen?</strong></p>
-                <div class="options">
-                    <div class="option">
-                        <input type="radio" id="kitchen-yes" name="q3" value="Yes">
-                        <label for="kitchen-yes">Yes</label>
-                    </div>
-                    <div class="option">
-                        <input type="radio" id="kitchen-no" name="q4" value="No">
-                        <label for="kitchen-no">No</label>
-                    </div>
-                </div>
+                <label>
+                    <input type="radio" name="kitchen" value="Yes"> Yes
+                </label><br>
+                <label>
+                    <input type="radio" name="kitchen" value="No"> No
+                </label>
             </div>
 
             <div class="question">
                 <p><strong>3. Are you planning to apply to a Living Learning Community?</strong></p>
-                <div class="options">
-                    <div class="option">
-                        <input type="radio" id="llc-yes" name="q1" value="Yes">
-                        <label for="llc-yes">Yes</label>
-                    </div>
-                    <div class="option">
-                        <input type="radio" id="llc-no" name="llc" value="No">
-                        <label for="llc-no">No</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="question">
-                <p><strong>4. Do you prefer having access to study rooms in your dorm building?</strong></p>
-                <div class="options">
-                    <div class="option">
-                        <input type="radio" id="study-yes" name="study" value="Yes">
-                        <label for="study-yes">Yes</label>
-                    </div>
-                    <div class="option">
-                        <input type="radio" id="study-no" name="study" value="No">
-                        <label for="study-no">No</label>
-                    </div>
-                </div>
-            </div>
-            <!-- Section 4 Question 1 -->
-            <div class="question">
-                <p>1. How far are you willing to walk to the campus center?</p>
                 <label>
-                    <input type="radio" name="q4" value="Less than 5 minutes"> Less than 5 minutes
+                    <input type="radio" name="llc" value="Yes"> Yes
                 </label><br>
                 <label>
-                    <input type="radio" name="q4" value="5-10 minutes"> 5-10 minutes
-                </label>
-                <label>
-                    <input type="radio" name="q4" value="10-15 minutes"> 10-15 minutes
-                </label>
-                <label>
-                    <input type="radio" name="q4" value="More than 15 minutes"> More than 15 minutes
-                </label>
-            </div>
-<!-- Section 4 Question 2 -->
-            <div class="question">
-                <p>2. Do you prefer having access to the RIMAC gym nearby?</p>
-                <label>
-                    <input type="radio" name="q5" value="Yes"> Yes
-                </label><br>
-                <label>
-                    <input type="radio" name="q5" value="No"> No
+                    <input type="radio" name="llc" value="No"> No
                 </label>
             </div>
 
-            <!-- Submit button -->
+            <!-- Section 4 -->
+            <h2>Section 4</h2>
+            <div class="question">
+                <p><strong>1. Do you prefer having access to study rooms in your dorm building?</strong></p>
+                <label>
+                    <input type="radio" name="study_rooms" value="Yes"> Yes
+                </label><br>
+                <label>
+                    <input type="radio" name="study_rooms" value="No"> No
+                </label>
+            </div>
+
+            <div class="question">
+                <p><strong>2. How far are you willing to walk to the campus center?</strong></p>
+                <label>
+                    <input type="radio" name="walking_distance" value="Less than 5 minutes"> Less than 5 minutes
+                </label><br>
+                <label>
+                    <input type="radio" name="walking_distance" value="5-10 minutes"> 5-10 minutes
+                </label><br>
+                <label>
+                    <input type="radio" name="walking_distance" value="10-15 minutes"> 10-15 minutes
+                </label><br>
+                <label>
+                    <input type="radio" name="walking_distance" value="More than 15 minutes"> More than 15 minutes
+                </label>
+            </div>
+
+            <div class="question">
+                <p><strong>3. Do you prefer having access to the RIMAC gym nearby?</strong></p>
+                <label>
+                    <input type="radio" name="gym" value="Yes"> Yes
+                </label><br>
+                <label>
+                    <input type="radio" name="gym" value="No"> No
+                </label>
+            </div>
+
             <button class="submit-button" type="button" onclick="calculateResult()">See Your Result</button>
         </form>
 
-        <!-- Result display -->
         <div id="result"></div>
     </div>
 
-    <!-- Link to the external JavaScript file -->
     <script src="./personalityQuizScript.js"></script>
 </body>
 </html>
