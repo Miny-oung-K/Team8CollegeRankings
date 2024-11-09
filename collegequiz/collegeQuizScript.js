@@ -44,7 +44,6 @@ function calculateResult() {
     if (q4 && q4.value === 'Apartment Style') EighthCount+=2;
     if (q4 && q4.value === 'Apartment Style') ERCCount+=2;
 
-    if (q5 && q5.value === 'extrovert') extrovertCount++;
     if (q5 && q5.value === 'Yes') SeventhCount++;
     if (q5 && q5.value === 'Yes') EighthCount++;
     if (q5 && q5.value === 'Yes') SixthCount++;
