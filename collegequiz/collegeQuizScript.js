@@ -78,34 +78,6 @@ function calculateResult() {
     if (q1 && q1.value === 'Physical Sciences') MuirCount += 3;
     if (q1 && q1.value === 'Physical Sciences') MarshallCount += 2;
     if (q1 && q1.value === 'Physical Sciences') SixthCount += 1;
-    if (q4 && q4.value === 'Residential Halls') ERCCount+=2;
-    if (q4 && q4.value === 'Residential Halls') WarrenCount++;
-    if (q4 && q4.value === 'Residential Halls') MarshallCount++;
-    if (q4 && q4.value === 'Residential Halls') MuirCount++;
-    if (q4 && q4.value === 'Residential Halls') RevelleCount++;
-    if (q4 && q4.value === 'Residential Halls') SixthCount++;
-    if (q4 && q4.value === 'Residential Halls') EighthCount+=2;
-    if (q4 && q4.value === 'Apartment Style') SeventhCount++;
-    if (q4 && q4.value === 'Apartment Style') EighthCount+=2;
-    if (q4 && q4.value === 'Apartment Style') ERCCount+=2;
-
-    if (q5 && q5.value === 'Yes') SeventhCount++;
-    if (q5 && q5.value === 'Yes') EighthCount++;
-    if (q5 && q5.value === 'Yes') SixthCount++;
-    if (q5 && q5.value === 'Yes') RevelleCount++;
-    if (q5 && q5.value === 'Yes') ERCCount++;
-    if (q5 && q5.value === 'Yes') MuirCount++;
-    if (q5 && q5.value === 'No') MarshallCount++;
-    if (q5 && q5.value === 'No') WarrenCount++;
-
-    if (q6 && q6.value === 'Yes') MuirCount++;
-    if (q6 && q6.value === 'Yes') SixthCount++;
-    if (q6 && q6.value === 'Yes') ERCCount++;
-    if (q6 && q6.value === 'Yes') WarrenCount++;
-    if (q6 && q6.value === 'No') SeventhCount++;
-    if (q6 && q6.value === 'No') EighthCount++;
-    if (q6 && q6.value === 'No') RevelleCount++;
-    if (q6 && q6.value === 'No') MarshallCount++;
 
     if (q1 && q1.value === 'Scripps Institution of Oceanography') RevelleCount += 8;
     if (q1 && q1.value === 'Scripps Institution of Oceanography') WarrenCount += 7;
@@ -154,6 +126,63 @@ function calculateResult() {
     if (q3 && q3.value === 'Markets nearby') MuirCount += 2;
     if (q3 && q3.value === 'Markets nearby') RevelleCount += 2;
     if (q3 && q3.value === 'Markets nearby') WarrenCount += 2;
+
+    if (q4 && q4.value === 'Residential Halls') ERCCount+=2;
+    if (q4 && q4.value === 'Residential Halls') WarrenCount++;
+    if (q4 && q4.value === 'Residential Halls') MarshallCount++;
+    if (q4 && q4.value === 'Residential Halls') MuirCount++;
+    if (q4 && q4.value === 'Residential Halls') RevelleCount++;
+    if (q4 && q4.value === 'Residential Halls') SixthCount++;
+    if (q4 && q4.value === 'Residential Halls') EighthCount+=2;
+    if (q4 && q4.value === 'Apartment Style') SeventhCount++;
+    if (q4 && q4.value === 'Apartment Style') EighthCount+=2;
+    if (q4 && q4.value === 'Apartment Style') ERCCount+=2;
+
+    if (q5 && q5.value === 'Yes') SeventhCount++;
+    if (q5 && q5.value === 'Yes') EighthCount++;
+    if (q5 && q5.value === 'Yes') SixthCount++;
+    if (q5 && q5.value === 'Yes') RevelleCount++;
+    if (q5 && q5.value === 'Yes') ERCCount++;
+    if (q5 && q5.value === 'Yes') MuirCount++;
+    if (q5 && q5.value === 'No') MarshallCount++;
+    if (q5 && q5.value === 'No') WarrenCount++;
+
+    if (q6 && q6.value === 'Yes') MuirCount++;
+    if (q6 && q6.value === 'Yes') SixthCount++;
+    if (q6 && q6.value === 'Yes') ERCCount++;
+    if (q6 && q6.value === 'Yes') WarrenCount++;
+    if (q6 && q6.value === 'No') SeventhCount++;
+    if (q6 && q6.value === 'No') EighthCount++;
+    if (q6 && q6.value === 'No') RevelleCount++;
+    if (q6 && q6.value === 'No') MarshallCount++;
+
+    if (q7 && q7.value === 'Yes') RevelleCount++;
+    if (q7 && q7.value === 'Yes') ERCCount++;
+    if (q7 && q7.value === 'Yes') MuirCount++;
+    if (q7 && q7.value === 'Yes') SixthCount++;
+    if (q7 && q7.value === 'Yes') MarshallCount++;
+    if (q7 && q7.value === 'Yes') WarrenCount++;
+    if (q7 && q7.value === 'Yes') EighthCount++;
+    if (q7 && q7.value === 'No') SeventhCount++;
+
+    if (q8 && q8.value === 'Less than 5 minutes') SixthCount++;
+    if (q8 && q8.value === '5-10 minutes') WarrenCount++;
+    if (q8 && q8.value === '5-10 minutes') MuirCount++;
+    if (q8 && q8.value === '10-15 minutes') MarshallCount++;
+    if (q8 && q8.value === '10-15 minutes') ERCCount++;
+    if (q8 && q8.value === '10-15 minutes') RevelleCount++;
+    if (q8 && q8.value === 'More than 15 minutes') SeventhCount++;
+    if (q8 && q8.value === 'More than 15 minutes') EighthCount++;
+
+    if (q9 && q9.value === 'Yes') SeventhCount++;
+    if (q9 && q9.value === 'Yes') MarshallCount++;
+    if (q9 && q9.value === 'Yes') MuirCount++;
+    if (q9 && q9.value === 'Yes') SeventhCount++;
+    if (q9 && q9.value === 'Yes') SixthCount++;
+    if (q9 && q9.value === 'Yes') ERCCount++;
+    if (q9 && q9.value === 'No') WarrenCount++;
+    if (q9 && q9.value === 'No') EighthCount++;
+    if (q9 && q.value === 'No') RevelleCount++;
 
 
     // Determine the result based on the counts
