@@ -72,12 +72,14 @@ function calculateResult() {
 
     // Determine the result based on the counts
     let resultText = '';
-    colleges = [SeventhCount, MarshallCount, MuirCount, SixthCount, WarrenCount, RevelleCount, EighthCount, ERCCount];
-    for (let i = 0; i < colleges.length; i++)
-    {
-        
-    }
+    collegesCount = [SeventhCount, MarshallCount, MuirCount, SixthCount, WarrenCount, RevelleCount, EighthCount, ERCCount];
 
+    collegesCount.sort((a, b) => b - a);
+    for (i = 0; i < collegesCount.length; i++)
+    {
+        resultText += collegesCount[i] + '\n';
+    }
+    
     // Display the result on the page
     document.getElementById('result').innerText = resultText;
 }
