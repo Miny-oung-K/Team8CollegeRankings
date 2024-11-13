@@ -2,6 +2,7 @@
 
 // This function calculates the quiz result based on the user's answers
 function calculateResult() {
+    console.log('print');
     // Get the selected values for each question
     const q1 = document.querySelector('input[name="q1"]:checked');
     const q2 = document.querySelector('input[name="q2"]:checked');
