@@ -187,14 +187,24 @@ function calculateResult() {
 
     // Determine the result based on the counts
     let resultText = '';
-    let collegesCount = [SeventhCount, MarshallCount, MuirCount, SixthCount, WarrenCount, RevelleCount, EighthCount, ERCCount];
-
-    collegesCount.sort((a, b) => b - a);
-    for (let i = 0; i < collegesCount.length; i++)
+    let collegesCount = 
     {
-        resultText += collegesCount[i] + '\n';
-    }
+        Seventh: SeventhCount,
+        Marshall: MarshallCount,
+        Muir: MuirCount,
+        Sixth: SixthCount,
+        Warren: WarrenCount,
+        Revelle: RevelleCount,
+        Eighth: EighthCount,
+        ERC: ERCCount
+    };
     
+    let sortedColleges = Object.entries(collegesCount).sort((a, b) => b[1] - a[1]);
+
+    for (let i = 0; i < sortedColleges.length; i++) {
+        resultText += sortedColleges[i][0] + ': ' + sortedColleges[i][1] + '<br>';
+    }
+
     // Display the result on the page
     document.getElementById('result').innerText = resultText;
 }
