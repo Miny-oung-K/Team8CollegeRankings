@@ -182,7 +182,7 @@ function calculateResult() {
     if (q9 && q9.value === 'Yes') ERCCount++;
     if (q9 && q9.value === 'No') WarrenCount++;
     if (q9 && q9.value === 'No') EighthCount++;
-    if (q9 && q.value === 'No') RevelleCount++;
+    if (q9 && q9.value === 'No') RevelleCount++;
 
 
     // Determine the result based on the counts
