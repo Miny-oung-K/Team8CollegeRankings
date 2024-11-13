@@ -109,7 +109,7 @@ function calculateResult() {
 
     //Question 3: Which dining options fo you prefer? (Select all that apply)
     //Dining Halls
-    if (q3 && q3.value === 'Dining Halls') SeventhCount++;
+    if (q3 && q3.value === 'Dining Halls') SeventhCount+=2;
     if (q3 && q3.value === 'Dining Halls') SixthCount += 2;
     if (q3 && q3.value === 'Dining Halls') MuirCount += 2;
     if (q3 && q3.value === 'Dining Halls') RevelleCount += 2;
@@ -185,26 +185,25 @@ function calculateResult() {
     if (q9 && q.value === 'No') RevelleCount++;
 
 
-    // Prepare an array of college counts
-    const collegesCount = [
-        { name: 'Seventh', count: SeventhCount },
-        { name: 'Marshall', count: MarshallCount },
-        { name: 'Muir', count: MuirCount },
-        { name: 'Sixth', count: SixthCount },
-        { name: 'Warren', count: WarrenCount },
-        { name: 'Revelle', count: RevelleCount },
-        { name: 'Eighth', count: EighthCount },
-        { name: 'ERC', count: ERCCount }
-    ];
+    // Determine the result based on the counts
+    let resultText = '';
+    let collegesCount = 
+    {
+        Seventh: SeventhCount,
+        Marshall: MarshallCount,
+        Muir: MuirCount,
+        Sixth: SixthCount,
+        Warren: WarrenCount,
+        Revelle: RevelleCount,
+        Eighth: EighthCount,
+        ERC: ERCCount
+    };
+    
+    let sortedColleges = Object.entries(collegesCount).sort((a, b) => b[1] - a[1]);
 
-    // Sort the array by count in descending order
-    collegesCount.sort((a, b) => b.count - a.count);
-
-    // Build result text
-    let resultText = 'College Rankings:\n';
-    collegesCount.forEach(college => {
-        resultText += `${college.name}: ${college.count}\n`;
-    });
+    for (let i = 0; i < sortedColleges.length; i++) {
+        resultText += sortedColleges[i][0] + ': ' + sortedColleges[i][1] + '\n';
+    }
 
     // Display the result on the page
     document.getElementById('result').innerText = resultText;
