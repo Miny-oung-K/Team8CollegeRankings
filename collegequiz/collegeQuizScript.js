@@ -263,7 +263,7 @@ function calculateResult() {
         .map(([college, score], index) => {
             return `${index + 1}. ${college}: ${score} points`;
         })
-        .join('\n');
+        .join('<br>');
 
     // Display the result
     const resultElement = document.getElementById('result');
