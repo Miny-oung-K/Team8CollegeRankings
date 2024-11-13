@@ -14,7 +14,7 @@ function calculateResult() {
     const q8 = document.querySelector('input[name="q8"]:checked');
     const q9 = document.querySelector('input[name="q9"]:checked');
 
-    // Initialize variables to keep track of personality types
+    // Initialize variables to keep track of colleges
     let EighthCount = 0;
     let SixthCount = 0;
     let RevelleCount = 0;
@@ -178,7 +178,6 @@ function calculateResult() {
     if (q9 && q9.value === 'Yes') SeventhCount++;
     if (q9 && q9.value === 'Yes') MarshallCount++;
     if (q9 && q9.value === 'Yes') MuirCount++;
-    if (q9 && q9.value === 'Yes') SeventhCount++;
     if (q9 && q9.value === 'Yes') SixthCount++;
     if (q9 && q9.value === 'Yes') ERCCount++;
     if (q9 && q9.value === 'No') WarrenCount++;
