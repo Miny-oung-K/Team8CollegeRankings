@@ -261,7 +261,7 @@ function calculateResult() {
     const sortedColleges = Object.entries(collegesCount)
         .sort((a, b) => b[1] - a[1])
         .map(([college, score], index) => {
-            return `${index + 1}. ${college}: ${score} points`;
+            return `${index + 1}. ${college}`;
         })
         .join('<br>');
 

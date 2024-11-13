@@ -1,22 +1,22 @@
-/* personality-quiz/quiz-styles.css */
+/* collegequizstyles.css */
 
 /* Apply a pastel gradient background */
 body {
-    background: linear-gradient(175deg, lightblue, lightpink, lightyellow);
+    background: linear-gradient(175deg, #2d5392, #0b75b3, #f3d561);
     font-family: Arial, sans-serif; /* Fallback font */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 /* Basic styling for the quiz container */
 .quiz-container {
-    max-width: 500px;
+    width: 600px;
     margin: 20px;
-    padding: 20px;
+    padding: 40px;
     background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -26,13 +26,15 @@ body {
 .quiz-container h1 {
     text-align: center;
     font-size: 36px;
-    color: #333;
-    font-family: 'Honk', cursive; /* Applying the custom font */
+    color: #2d5392;
+    font-family: 'Poppins'; /* Applying the custom font */
 }
 
 /* Style for each question */
 .question {
     margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-size: 20px;
 }
 
 /* Style for the back button */
@@ -45,9 +47,11 @@ body {
     background-color: #4784ac;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 25px;
     cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins';
 }
 
 /* Hover effect for the back button */
@@ -55,22 +59,41 @@ body {
     background-color: #2a3c64;
 }
 
+.quiz-container h2 {
+    color: #2d5392;
+    font-family: 'Poppins';
+}
+
+.quiz-container p {
+    color: #2d5392;
+    font-family: 'Poppins';
+}
+
+#quiz-form .question label {
+    color: #2d5392;
+    font-family: 'Poppins';
+    padding: 10px;
+    line-height: 1.5;
+}
+
 /* Style for the submit button */
 .submit-button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #4784ac;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 21px;
 }
 
 /* Hover effect for the submit button */
 .submit-button:hover {
-    background-color: #45a049;
+    background-color: #2a3c64;
 }
 
 /* Style for the result display */
@@ -78,5 +101,7 @@ body {
     margin-top: 20px;
     font-size: 18px;
     text-align: center;
-    color: #333;
+    color: #2d5392;
+    font-size: 22px;
+    font-family: 'Poppins';
 }
