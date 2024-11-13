@@ -187,10 +187,10 @@ function calculateResult() {
 
     // Determine the result based on the counts
     let resultText = '';
-    collegesCount = [SeventhCount, MarshallCount, MuirCount, SixthCount, WarrenCount, RevelleCount, EighthCount, ERCCount];
+    let collegesCount = [SeventhCount, MarshallCount, MuirCount, SixthCount, WarrenCount, RevelleCount, EighthCount, ERCCount];
 
     collegesCount.sort((a, b) => b - a);
-    for (i = 0; i < collegesCount.length; i++)
+    for (let i = 0; i < collegesCount.length; i++)
     {
         resultText += collegesCount[i] + '\n';
     }
