@@ -268,7 +268,7 @@ function calculateResult() {
     // Display the result
     const resultElement = document.getElementById('result');
     if (resultElement) {
-        resultElement.innerHTML = `<h3>Your College Match Rankings:</h3>\n${sortedColleges}`;
+        resultElement.innerHTML = `<h3>Your College Rankings:</h3>\n${sortedColleges}`;
     } else {
         console.error('Result element not found!');
     }
