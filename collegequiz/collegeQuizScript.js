@@ -204,7 +204,6 @@ function calculateResult() {
     for (let i = 0; i < sortedColleges.length; i++) {
         resultText += sortedColleges[i][0] + ': ' + sortedColleges[i][1] + '<br>';
     }
-    collegesCount.sort((a, b) => b - a);
 
     // Display the result on the page
     document.getElementById('result').innerText = resultText;
