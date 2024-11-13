@@ -202,7 +202,7 @@ function calculateResult() {
     let sortedColleges = Object.entries(collegesCount).sort((a, b) => b[1] - a[1]);
 
     for (let i = 0; i < sortedColleges.length; i++) {
-        resultText += sortedColleges[i][0] + ': ' + sortedColleges[i][1] + '<br>';
+        resultText += sortedColleges[i][0] + ': ' + sortedColleges[i][1] + '\n';
     }
 
     // Display the result on the page
