@@ -1,0 +1,1 @@
+# UCSD College Ranking Quiz 🔱
