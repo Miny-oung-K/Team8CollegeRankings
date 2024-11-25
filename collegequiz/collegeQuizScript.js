@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     emojiCursor.textContent = "🔱"; // Use your desired emoji
     emojiCursor.style.position = "absolute";
     emojiCursor.style.pointerEvents = "none"; // Prevent blocking clicks
-    emojiCursor.style.fontSize = "60px"; // Adjust emoji size
+    emojiCursor.style.fontSize = "34px"; // Adjust emoji size
     emojiCursor.style.zIndex = "1000"; // Ensure it's on top of everything
 
     document.body.appendChild(emojiCursor);
