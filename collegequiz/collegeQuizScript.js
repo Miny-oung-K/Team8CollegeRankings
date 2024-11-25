@@ -14,6 +14,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const sungodImage = document.createElement("img");
+    sungodImage.src = "sungod.png"; // Path to image
+    sungodImage.alt = "Random Sungod";
+    sungodImage.style.position = "absolute";
+    sungodImage.style.width = "100px";
+
+    // Randomly position the raccoon
+    function randomPosition() {
+        const x = Math.random() * window.innerWidth; // Random horizontal position
+        const y = Math.random() * window.innerHeight; // Random vertical position
+        sungodImage.style.left = `${x}px`;
+        sungodImage.style.top = `${y}px`;
+    }
+
+    // Initial positioning
+    randomPosition();
+
+    // Add the sungod to the body
+    document.body.appendChild(sungodImage);
+
+    // Optional: Make sungod move to a new random position every 6 seconds
+    setInterval(randomPosition, 6000); // Change position every 6 seconds
+});
+
 function calculateResult() {
     // Initialize variables to keep track of personality types
     let EighthCount = 0;
