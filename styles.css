@@ -62,10 +62,10 @@ main {
 
 .colleges-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));; 
     grid-template-rows: repeat(2, auto); 
     gap: 20px; /* Adds space between grid items */
-    max-width: 1200px; /* Adjust this value based on your needs */
+    max-width: 0 auto; /* Adjust this value based on your needs */
     margin: 0 auto; 
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
@@ -85,6 +85,24 @@ main {
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    .colleges-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Reduce column size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .colleges-container {
+        grid-template-columns: repeat(2, 1fr); /* Force two columns on very small screens */
+        gap: 10px; /* Reduce gap size */
+    }
+
+    .colleges-container img {
+        height: 100px; /* Adjust height for very small screens */
+    }
+}
+
 
 footer .footer {
     color: white;
