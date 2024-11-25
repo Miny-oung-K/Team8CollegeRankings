@@ -21,16 +21,12 @@ h1{
     color: white;
     margin-bottom: 20px;
     font-size: 50px;
-    -webkit-text-stroke: 2px black; /* Adjust thickness and color */
-    color: white; /* Optional: Text fill color */
 }
 
 p{
     color: white;
     margin-bottom: 20px;
     font-size: 30px;
-    -webkit-text-stroke: 0.4px black; /* Adjust thickness and color */
-    color: white; /* Optional: Text fill color */
 }
 
 main {
