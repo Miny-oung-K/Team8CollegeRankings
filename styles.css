@@ -5,7 +5,7 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 200vh; /* makes the body take up the full viewport height */
+    min-height: 100vh; /* makes the body take up the full viewport height */
     margin: 0; 
 
     background-image: url('ucsd.jpeg'); /* Replace with your image path */
@@ -17,10 +17,28 @@ body
     margin: 0;
     padding: 0;
 }
+
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4784ac;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'Poppins';
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #2a3c64;
+}
 h1{
     color: white;
     margin-bottom: 20px;
     font-size: 50px;
+
 }
 
 p{
@@ -30,11 +48,12 @@ p{
 }
 
 main {
-    display: flex;
+   display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
     flex: 1;
+    padding-top: 0%;
 }
 
 .colleges-container {
