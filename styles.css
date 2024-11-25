@@ -37,18 +37,19 @@ body {
 .start-button:hover {
     background-color: #2a3c64;
 }
-h1{
+
+h1 {
     color: white;
     margin-bottom: 20px;
-    font-size: 50px;
-
+    font-size: 5vw; /* Font size scales with viewport width */
 }
 
-p{
+p {
     color: white;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 2.5vw; /* Scales with viewport width */
 }
+
 
 main {
    display: flex;
@@ -89,24 +90,50 @@ footer .footer {
     color: white;
     font-size: 20px !important;
 }
-.start-button
-{
-    position: auto;
-    padding: 20px;
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
     background-color: #4784ac;
     color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 35px;
-    cursor: pointer;
-    margin-top: 10%;
-    margin-bottom: 10%;
     text-decoration: none;
+    border-radius: 10px;
+    font-size: 2.5vw; /* Scales with viewport width */
+    font-family: 'Roboto';
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 .start-button:hover {
     background-color: #2a3c64;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 7vw; /* Slightly larger font size for smaller screens */
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .start-button {
+        font-size: 4vw;
+        padding: 10px 20px; /* Adjust padding for smaller buttons */
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem; /* Limit maximum size for larger screens */
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .start-button {
+        font-size: 1.5rem;
+    }
 }
 
 .colleges-container a {
