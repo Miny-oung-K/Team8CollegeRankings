@@ -15,16 +15,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Create image element
     const sungodImage = document.createElement("img");
-    sungodImage.src = "sungod.png"; // Path to image
-    sungodImage.alt = "Random Sungod";
+    sungodImage.src = "sungod.png";
+    sungodImage.alt = "Random sungod";
     sungodImage.style.position = "absolute";
-    sungodImage.style.width = "100px";
+    sungodImage.style.width = "100px"; // Adjust size as needed
 
-    // Randomly position the raccoon
+    // Randomly position the sungod, avoiding the .quiz-container
     function randomPosition() {
-        const x = Math.random() * window.innerWidth; // Random horizontal position
-        const y = Math.random() * window.innerHeight; // Random vertical position
+        const container = document.querySelector(".quiz-container");
+
+        // Get container dimensions and position
+        const containerRect = container.getBoundingClientRect();
+
+        // Calculate random position ensuring sungod avoids the container
+        let x, y;
+        do {
+            x = Math.random() * (window.innerWidth - 100); // Subtract sungod image width
+            y = Math.random() * (window.innerHeight - 100); // Subtract sungod image height
+        } while (
+            x + 100 > containerRect.left && // Right edge of sungod > left edge of container
+            x < containerRect.right && // Left edge of sungod < right edge of container
+            y + 100 > containerRect.top && // Bottom edge of sungod > top edge of container
+            y < containerRect.bottom // Top edge of sungod < bottom edge of container
+        );
+
         sungodImage.style.left = `${x}px`;
         sungodImage.style.top = `${y}px`;
     }
@@ -32,11 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial positioning
     randomPosition();
 
-    // Add the sungod to the body
+    // Add the raccoon to the body
     document.body.appendChild(sungodImage);
 
-    // Optional: Make sungod move to a new random position every 6 seconds
-    setInterval(randomPosition, 6000); // Change position every 6 seconds
+    // Optional: Move the raccoon every 3 seconds, avoiding the container
+    setInterval(randomPosition, 3000); // Adjust interval as needed
 });
 
 function calculateResult() {
