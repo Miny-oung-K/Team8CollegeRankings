@@ -82,11 +82,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.colleges-container img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-
 footer .footer {
     color: white;
     font-size: 20px !important;
@@ -118,7 +113,7 @@ footer .footer {
 }
 
 .colleges-container a::after {
-    content: attr(href); /* Use the href attribute as the college name */
+    content: attr(data-name); /* Use the custom data-name attribute */
     position: absolute;
     top: 0;
     left: 0;
