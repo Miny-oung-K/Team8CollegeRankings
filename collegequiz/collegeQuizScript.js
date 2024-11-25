@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sunGodImage.src = "sungod.png"; // Path to your Sun God image
     sunGodImage.alt = "Sun God";
     sunGodImage.style.position = "absolute";
-    sunGodImage.style.width = "200px"; // Adjust size as needed
+    sunGodImage.style.width = "150px"; // Adjust size as needed
 
     // Randomly position the Sun God, avoiding the .quiz-container and .back-button
     function randomPosition() {
