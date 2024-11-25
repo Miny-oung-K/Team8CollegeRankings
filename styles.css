@@ -13,7 +13,7 @@ body
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Makes the background stay fixed while scrolling */
     background-position: center; /* Centers the image */
-    font-family: 'Roboto', 'Changa', sans-serif; /* Ensures your font styles remain applied */
+    font-family: 'Roboto', 'changa', sans-serif; /* Ensures your font styles remain applied */
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,7 @@ body
     text-decoration: none;
     border-radius: 10px;
     font-size: 24px;
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
