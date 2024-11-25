@@ -5,7 +5,7 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* makes the body take up the full viewport height */
+    min-height: 200vh; /* makes the body take up the full viewport height */
     margin: 0; 
 
     background-image: url('ucsd.jpeg'); /* Replace with your image path */
@@ -16,6 +16,8 @@ body
     font-family: 'Roboto', 'Changa', sans-serif; /* Ensures your font styles remain applied */
     margin: 0;
     padding: 0;
+
+    cursor: url('tritoncursor.png'), auto;
 }
 h1{
     color: white;
@@ -35,6 +37,15 @@ main {
     align-items: center; 
     justify-content: center; 
     flex: 1;
+}
+
+.colleges-container {
+    width: 600px;
+    margin: 20px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer .footer {
