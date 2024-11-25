@@ -16,6 +16,8 @@ body
     font-family: 'Roboto', 'Changa', sans-serif; /* Ensures your font styles remain applied */
     margin: 0;
     padding: 0;
+
+    cursor: url('tritoncursor.png'), auto;
 }
 h1{
     color: white;
