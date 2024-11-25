@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     // Create the Sun God image element
     const sunGodImage = document.createElement("img");
-    sunGodImage.src = "./images/sungod.png"; // Path to your Sun God image
+    sunGodImage.src = "sungod.png"; // Path to your Sun God image
     sunGodImage.alt = "Sun God";
     sunGodImage.style.position = "absolute";
     sunGodImage.style.width = "150px"; // Adjust size as needed
