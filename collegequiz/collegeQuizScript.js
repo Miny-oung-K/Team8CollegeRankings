@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function randomPosition() {
         const x = Math.random() * window.innerWidth; // Random horizontal position
         const y = Math.random() * window.innerHeight; // Random vertical position
-        raccoonImage.style.left = `${x}px`;
-        raccoonImage.style.top = `${y}px`;
+        sungodImage.style.left = `${x}px`;
+        sungodImage.style.top = `${y}px`;
     }
 
     // Initial positioning
