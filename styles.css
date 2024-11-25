@@ -56,35 +56,118 @@ main {
     padding-top: 0%;
 }
 
-.colleges-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(2, auto); 
-    gap: 20px; /* Adds space between grid items */
-    max-width: 1200px; /* Adjust this value based on your needs */
-    margin: 0 auto; 
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    border-radius: 15px;
+
+/* General section styling */
+.section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    scroll-snap-align: start; /* This creates a snapping effect when scrolling */
 }
 
-.colleges-container a {
-    display: block;
+/* Container for all sections */
+html {
+    scroll-snap-type: y mandatory; /* Enables smooth scrolling with snapping */
+    scroll-behavior: smooth;
+}
+
+/* Landing section specific styles */
+.landing-section {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    transform: translateX(-50%);
     text-align: center;
+    color: white;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator p {
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-arrow {
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+/* Optional: Add hover effect */
+.scroll-indicator:hover {
+    animation-play-state: paused;
+}
+
+.landing-section {
+    position: relative;
+}
+
+/* Colleges section  styles */
+.colleges-section {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+
+.colleges-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .colleges-container img {
-    width: 100%; /* Makes images fill their grid cell */
-    height: 150px; /* Fixed height for consistency */
-    object-fit: cover; /* Maintains aspect ratio while filling space */
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .colleges-container img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: translateY(-5px);
 }
+
+
 
 
 footer .footer {
