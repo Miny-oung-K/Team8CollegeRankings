@@ -6,6 +6,8 @@ body {
     justify-content: center;
     min-height: 100vh; /* Makes the body take up the full viewport height */
     margin: 0;
+    font-family: 'Roboto';
+
 
     background-image: url('ucsd.jpeg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire viewport */
@@ -48,6 +50,12 @@ p {
     color: white;
     margin-bottom: 20px;
     font-size: 2.5vw; /* Scales with viewport width */
+}
+
+h2{
+    color:aliceblue;
+    font-size: 3vw;
+    
 }
 
 
