@@ -15,44 +15,52 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Create image element
-    const sungodImage = document.createElement("img");
-    sungodImage.src = "sungod.png";
-    sungodImage.alt = "Random sungod";
-    sungodImage.style.position = "absolute";
-    sungodImage.style.width = "100px"; // Adjust size as needed
+    // Create a Sun God image element
+    const sunGodImage = document.createElement("img");
+    sunGodImage.src = "sungod.png"; // Path to your Sun God image
+    sunGodImage.alt = "Sun God";
+    sunGodImage.style.position = "absolute";
+    sunGodImage.style.width = "100px"; // Adjust size as needed
 
-    // Randomly position the sungod, avoiding the .quiz-container
+    // Randomly position the Sun God, avoiding the .quiz-container and .back-button
     function randomPosition() {
         const container = document.querySelector(".quiz-container");
+        const backButton = document.querySelector(".back-button");
 
-        // Get container dimensions and position
+        // Get dimensions and positions of the container and back button
         const containerRect = container.getBoundingClientRect();
+        const backButtonRect = backButton.getBoundingClientRect();
 
-        // Calculate random position ensuring sungod avoids the container
+        // Calculate random position ensuring the Sun God avoids both elements
         let x, y;
         do {
-            x = Math.random() * (window.innerWidth - 100); // Subtract sungod image width
-            y = Math.random() * (window.innerHeight - 100); // Subtract sungod image height
+            x = Math.random() * (window.innerWidth - 100); // Subtract Sun God image width
+            y = Math.random() * (window.innerHeight - 100); // Subtract Sun God image height
         } while (
-            x + 100 > containerRect.left && // Right edge of sungod > left edge of container
-            x < containerRect.right && // Left edge of sungod < right edge of container
-            y + 100 > containerRect.top && // Bottom edge of sungod > top edge of container
-            y < containerRect.bottom // Top edge of sungod < bottom edge of container
+            // Check overlap with .quiz-container
+            (x + 100 > containerRect.left &&
+                x < containerRect.right &&
+                y + 100 > containerRect.top &&
+                y < containerRect.bottom) ||
+            // Check overlap with .back-button
+            (x + 100 > backButtonRect.left &&
+                x < backButtonRect.right &&
+                y + 100 > backButtonRect.top &&
+                y < backButtonRect.bottom)
         );
 
-        sungodImage.style.left = `${x}px`;
-        sungodImage.style.top = `${y}px`;
+        sunGodImage.style.left = `${x}px`;
+        sunGodImage.style.top = `${y}px`;
     }
 
     // Initial positioning
     randomPosition();
 
-    // Add the raccoon to the body
-    document.body.appendChild(sungodImage);
+    // Add the Sun God to the body
+    document.body.appendChild(sunGodImage);
 
-    // Optional: Move the raccoon every 3 seconds, avoiding the container
-    setInterval(randomPosition, 3000); // Adjust interval as needed
+    // Optional: Move the Sun God every 5 seconds, avoiding the container and button
+    setInterval(randomPosition, 5000); // Adjust interval as needed
 });
 
 function calculateResult() {
