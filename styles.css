@@ -57,13 +57,35 @@ main {
 }
 
 .colleges-container {
-    width: 800px;
-    margin: 20px;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent white background */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; /* Adds space between grid items */
+    max-width: 1200px; /* Adjust this value based on your needs */
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 15px;
 }
+
+.colleges-container a {
+    display: block;
+    text-align: center;
+}
+
+.colleges-container img {
+    width: 100%; /* Makes images fill their grid cell */
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Maintains aspect ratio while filling space */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.colleges-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
 
 footer .footer {
     color: white;
