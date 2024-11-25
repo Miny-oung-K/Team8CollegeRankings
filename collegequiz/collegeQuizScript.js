@@ -34,18 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
         // Calculate random position ensuring the Sun God avoids both elements
         let x, y;
         do {
-            x = Math.random() * (window.innerWidth - 100); // Subtract Sun God image width
-            y = Math.random() * (window.innerHeight - 100); // Subtract Sun God image height
+            x = Math.random() * (window.innerWidth - 150); // Subtract Sun God image width
+            y = Math.random() * (window.innerHeight - 150); // Subtract Sun God image height
         } while (
             // Check overlap with .quiz-container
-            (x + 100 > containerRect.left &&
+            (x + 150 > containerRect.left &&
                 x < containerRect.right &&
-                y + 100 > containerRect.top &&
+                y + 150 > containerRect.top &&
                 y < containerRect.bottom) ||
             // Check overlap with .back-button
-            (x + 100 > backButtonRect.left &&
+            (x + 150 > backButtonRect.left &&
                 x < backButtonRect.right &&
-                y + 100 > backButtonRect.top &&
+                y + 150 > backButtonRect.top &&
                 y < backButtonRect.bottom)
         );
 
