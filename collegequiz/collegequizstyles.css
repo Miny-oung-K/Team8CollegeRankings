@@ -105,3 +105,10 @@ body {
     font-size: 22px;
     font-family: 'Poppins';
 }
+/* Section blue highlight */
+mark {
+    display: block;
+    text-align: center;
+    background-color: #9cb8e6;
+    color: #2d5392;
+}
