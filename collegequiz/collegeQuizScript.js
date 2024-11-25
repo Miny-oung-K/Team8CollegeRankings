@@ -15,46 +15,52 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Create the Sun God image element
+    // Create a Sun God image element
     const sunGodImage = document.createElement("img");
     sunGodImage.src = "sungod.png"; // Path to your Sun God image
     sunGodImage.alt = "Sun God";
     sunGodImage.style.position = "absolute";
     sunGodImage.style.width = "150px"; // Adjust size as needed
-    sunGodImage.style.height = "150px"; // Maintain proportional size
-    sunGodImage.style.zIndex = "1000"; // Ensure it stays on top
-    sunGodImage.style.pointerEvents = "none"; // Prevent blocking interactions
 
-    // Add the Sun God image to the body
-    document.body.appendChild(sunGodImage);
+    // Randomly position the Sun God, avoiding the .quiz-container and .back-button
+    function randomPosition() {
+        const container = document.querySelector(".quiz-container");
+        const backButton = document.querySelector(".back-button");
 
-    // Function to update the Sun God's position dynamically
-    function updatePosition(event) {
-        const xOffset = 50; // Offset to adjust Sun God position
-        const yOffset = 50; // Offset to adjust Sun God position
+        // Get dimensions and positions of the container and back button
+        const containerRect = container.getBoundingClientRect();
+        const backButtonRect = backButton.getBoundingClientRect();
 
-        // If the event is scroll, calculate based on scroll position
-        if (event.type === "scroll") {
-            const scrollX = window.scrollX || window.pageXOffset; // Horizontal scroll
-            const scrollY = window.scrollY || window.pageYOffset; // Vertical scroll
-            sunGodImage.style.left = `${scrollX + xOffset}px`;
-            sunGodImage.style.top = `${scrollY + yOffset}px`;
-        } 
-        // If the event is mousemove, calculate based on mouse position
-        else if (event.type === "mousemove") {
-            const mouseX = event.pageX;
-            const mouseY = event.pageY;
-            sunGodImage.style.left = `${mouseX + xOffset}px`;
-            sunGodImage.style.top = `${mouseY + yOffset}px`;
-        }
+        // Calculate random position ensuring the Sun God avoids both elements
+        let x, y;
+        do {
+            x = Math.random() * (window.innerWidth - 150); // Subtract Sun God image width
+            y = Math.random() * (window.innerHeight - 150); // Subtract Sun God image height
+        } while (
+            // Check overlap with .quiz-container
+            (x + 150 > containerRect.left &&
+                x < containerRect.right &&
+                y + 150 > containerRect.top &&
+                y < containerRect.bottom) ||
+            // Check overlap with .back-button
+            (x + 150 > backButtonRect.left &&
+                x < backButtonRect.right &&
+                y + 150 > backButtonRect.top &&
+                y < backButtonRect.bottom)
+        );
+
+        sunGodImage.style.left = `${x}px`;
+        sunGodImage.style.top = `${y}px`;
     }
 
-    // Initial position
-    updatePosition({ type: "scroll" });
+    // Initial positioning
+    randomPosition();
 
-    // Add scroll and mousemove event listeners
-    window.addEventListener("mousemove", updatePosition);
-    window.addEventListener("scroll", updatePosition);
+    // Add the Sun God to the body
+    document.body.appendChild(sunGodImage);
+
+    // Optional: Move the Sun God every 5 seconds, avoiding the container and button
+    setInterval(randomPosition, 5000); // Adjust interval as needed
 });
 
 function calculateResult() {
