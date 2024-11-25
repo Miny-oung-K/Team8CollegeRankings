@@ -1,3 +1,68 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const emojiCursor = document.createElement("div");
+    emojiCursor.textContent = "🔱"; // Use your desired emoji
+    emojiCursor.style.position = "absolute";
+    emojiCursor.style.pointerEvents = "none"; // Prevent blocking clicks
+    emojiCursor.style.fontSize = "34px"; // Adjust emoji size
+    emojiCursor.style.zIndex = "1000"; // Ensure it's on top of everything
+
+    document.body.appendChild(emojiCursor);
+
+    document.addEventListener("mousemove", function (e) {
+        emojiCursor.style.left = `${e.pageX}px`;
+        emojiCursor.style.top = `${e.pageY}px`;
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Create a Sun God image element
+    const sunGodImage = document.createElement("img");
+    sunGodImage.src = "sungod.png"; // Path to your Sun God image
+    sunGodImage.alt = "Sun God";
+    sunGodImage.style.position = "absolute";
+    sunGodImage.style.width = "150px"; // Adjust size as needed
+
+    // Randomly position the Sun God, avoiding the .quiz-container and .back-button
+    function randomPosition() {
+        const container = document.querySelector(".quiz-container");
+        const backButton = document.querySelector(".back-button");
+
+        // Get dimensions and positions of the container and back button
+        const containerRect = container.getBoundingClientRect();
+        const backButtonRect = backButton.getBoundingClientRect();
+
+        // Calculate random position ensuring the Sun God avoids both elements
+        let x, y;
+        do {
+            x = Math.random() * (window.innerWidth - 150); // Subtract Sun God image width
+            y = Math.random() * (window.innerHeight - 150); // Subtract Sun God image height
+        } while (
+            // Check overlap with .quiz-container
+            (x + 150 > containerRect.left &&
+                x < containerRect.right &&
+                y + 150 > containerRect.top &&
+                y < containerRect.bottom) ||
+            // Check overlap with .back-button
+            (x + 150 > backButtonRect.left &&
+                x < backButtonRect.right &&
+                y + 150 > backButtonRect.top &&
+                y < backButtonRect.bottom)
+        );
+
+        sunGodImage.style.left = `${x}px`;
+        sunGodImage.style.top = `${y}px`;
+    }
+
+    // Initial positioning
+    randomPosition();
+
+    // Add the Sun God to the body
+    document.body.appendChild(sunGodImage);
+
+    // Optional: Move the Sun God every 5 seconds, avoiding the container and button
+    setInterval(randomPosition, 5000); // Adjust interval as needed
+});
+
 function calculateResult() {
     // Initialize variables to keep track of personality types
     let EighthCount = 0;
