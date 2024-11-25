@@ -110,3 +110,35 @@ footer .footer {
 .start-button:hover {
     background-color: #2a3c64;
 }
+
+.colleges-container a {
+    position: relative; /* Needed for positioning the overlay */
+    display: block;
+    text-align: center;
+}
+
+.colleges-container a::after {
+    content: attr(href); /* Use the href attribute as the college name */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Translucent white background */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px; /* Matches the image's border radius */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+    pointer-events: none; /* Prevents the overlay from blocking clicks */
+}
+
+.colleges-container a:hover::after {
+    opacity: 1; /* Makes the overlay visible on hover */
+}
