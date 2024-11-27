@@ -151,7 +151,7 @@ function calculateResult() {
             RevelleCount += 2;
             WarrenCount += 1;
         }
-    } else if (major.value === 'Engineering') {
+        else if (major.value === 'Engineering') {
         EighthCount += 6;
         MarshallCount += 5;
         ERCCount += 3;
@@ -161,7 +161,7 @@ function calculateResult() {
         RevelleCount += 2;
         WarrenCount += 8;
     }
-    }
+}
 
     // Question 2: Values
     if (values) {
