@@ -151,6 +151,16 @@ function calculateResult() {
             RevelleCount += 2;
             WarrenCount += 1;
         }
+    } else if (major.value === 'Engineering') {
+        EighthCount += 6;
+        MarshallCount += 5;
+        ERCCount += 3;
+        MuirCount += 7;
+        SixthCount += 4;
+        SeventhCount += 1;
+        RevelleCount += 2;
+        WarrenCount += 8;
+    }
     }
 
     // Question 2: Values
