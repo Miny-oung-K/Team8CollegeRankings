@@ -11,7 +11,8 @@ Here's an interactive guide to help prospective students discover which UC San D
 - **📊 Visual Ranking Insights**: See a detailed breakdown of your results with percentages or charts that show how well each UCSD college aligns with your choices. Make an informed decision at a glance!
 - **🏠 Explore Residential Options**: Learn about each college's dorm styles, proximity to campus amenities, and features like study rooms, kitchens, and gyms. Visualize your living experience at UCSD.
 - **📍 Interactive College Profiles**: Dive into detailed overviews of each college's academic strengths, culture, dining options, and traditions, complete with an interactive campus map to explore key locations.
-- **🐥 Find Fluffy!**: See Fluffy floating around the page while you complete the quiz!💛💛💛
+- - **🗺️ Campus Map**: Scroll down all the way to the bottom to see UC San Diego's campus embedded using Google Maps!
+- **🐥 Find Fluffy!**: See our mascot Fluffy floating around the page while you complete the quiz!💛💛💛
 
 ## Technologies Used
 
