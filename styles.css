@@ -279,3 +279,11 @@ footer .footer {
 .colleges-container a:hover::after {
     opacity: 1; /* Makes the overlay visible on hover */
 }
+
+.map {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30%;
+}
